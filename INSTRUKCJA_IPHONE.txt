@@ -1,0 +1,20 @@
+NOWY PROSTY SYSTEM TOMYBIKE
+
+Wgraj CAŁĄ zawartość tego folderu do głównego katalogu repozytorium tomybike-website, zastępując obecne pliki.
+Najlepiej małymi partiami po 2–3 pliki.
+
+Najważniejsze pliki:
+- index.html
+- product.html
+- products.js
+- app.js
+- style.css
+- netlify.toml
+- folder assets
+
+Po wgraniu klikaj Commit changes. Netlify zaktualizuje stronę automatycznie.
+
+PRZY KOLEJNYM ROWERZE:
+- dodajesz tylko jego zdjęcia do assets
+- podmieniasz products.js
+Nie podmieniasz stron wcześniejszych produktów.
