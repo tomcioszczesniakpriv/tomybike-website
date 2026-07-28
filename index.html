@@ -1,1 +1,37 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>My Bike</title><link rel="stylesheet" href="style.css"><script src="products.js"></script><script src="app.js"></script></head><body><main class="wrap"><section class="hero"><img src="four-landscapes-natural.jpg" alt="Adventure landscapes"><div class="hero-copy"><h1>My Bike – Used Bikes – Go to Adventure</h1><p>Quality used bikes in Swindon and Marlborough.</p></div></section><section id="bikes"><h2>Available bikes</h2><div id="productGrid" class="grid"></div></section><section id="about" class="panel" style="margin-top:24px"><h2>About</h2><p>Every bicycle is personally selected, checked and prepared before sale.</p></section><section id="contact" class="panel" style="margin-top:18px"><h2>Contact</h2><p>Collection in Swindon or Marlborough. Local delivery within 30 miles.</p></section></main><footer><div class="wrap">My Bike – Used Bikes – Go to Adventure</div></footer><script>initCommon();document.getElementById('productGrid').innerHTML=PRODUCTS.map(p=>`<article class="card" id="${p.category==='E-Bikes'?'ebikes':''}"><img src="${p.images[0]}" alt="${p.name}"><div class="card-body"><small>${t(p.status)} · ${p.type}</small><h2>${p.name}</h2><div class="price">£${p.price}</div><p>${p.size} · ${p.wheels}</p><div class="actions"><a class="btn dark" href="product.html?id=${p.id}">${t('View details')}</a><button class="btn primary" onclick="addToCart('${p.id}')">${t('Add to basket')}</button></div></div></article>`).join('');</script></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>My Bike – Used Bikes</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="site-top"><div class="top-stack">
+  <button class="icon-btn" data-open-menu aria-label="Menu">☰</button>
+  <a href="index.html"><img class="hero-logo" src="my-bike-clean-logo.png" alt="My Bike – Used Bikes – Go to Adventure"></a>
+  <div class="top-actions">
+    <select data-lang-select aria-label="Language"><option value="en">English</option><option value="pl">Polski</option></select>
+    <button class="icon-btn" data-open-cart aria-label="Basket">🛒<span class="cart-count" data-cart-count>0</span></button>
+  </div>
+</div></header>
+
+<section class="hero"><div class="hero-box"><h1>Find Your Bike</h1><p>Quality used bikes with honest descriptions and friendly local service.</p><a class="btn" href="#bikes">VIEW BIKES</a></div></section>
+
+<section class="info-strip">
+  <div class="info-box"><b>FULLY INSPECTED</b><span>Checked for your safety.</span></div>
+  <div class="info-box"><b>SERVICED & READY</b><span>Prepared before sale.</span></div>
+  <div class="info-box"><b>HONEST PHOTOS</b><span>The exact bike you receive.</span></div>
+  <div class="info-box"><b>LOCAL & TRUSTED</b><span>Friendly, no-pressure service.</span></div>
+</section>
+
+<section class="section" id="bikes"><div class="section-head"><h2>Featured bikes</h2></div><div class="grid" id="bikeGrid"></div></section>
+
+<section class="section" id="why"><h2>Why buy from TomyBike?</h2><div class="info-strip" style="padding:0">
+  <div class="info-box"><b>Honest photographs</b><span>You see the exact used bicycle offered.</span></div>
+  <div class="info-box"><b>Clear descriptions</b><span>Condition and important details are presented directly.</span></div>
+  <div class="info-box"><b>Local contact</b><span>Friendly service in Swindon and Marlborough.</span></div>
+  <div class="info-box"><b>No pressure</b><span>Ask questions and arrange a viewing before deciding.</span></div>
+</div></section>
+
+<footer id="contact"><div class="footer-grid"><div><img src="my-bike-clean-logo.png" alt=""><p>Quality used bikes with honest descriptions and friendly local service.</p></div><div><b>NAVIGATION</b><a href="#bikes">Bikes</a><a href="#why">About</a></div><div><b>CONTACT</b><p>Swindon & Marlborough</p><p>Local delivery within 30 miles</p><p>WhatsApp / Call: 07459 620789</p></div></div></footer>
+
+<div class="site-overlay" id="siteOverlay" data-close-panels></div>
+<aside class="site-panel menu-panel" id="menuPanel"><button class="panel-close" data-close-panels>×</button><nav>
+<a href="index.html" data-i18n-simple="home">Home</a><a href="index.html#bikes" data-i18n-simple="bikes">Bikes</a><a href="index.html#bikes" data-i18n-simple="ebikes">E-Bikes</a><a href="index.html#why" data-i18n-simple="about">About</a><a href="index.html#contact" data-i18n-simple="contact">Contact</a>
+</nav></aside>
+<aside class="site-panel cart-panel" id="cartPanel"><button class="panel-close" data-close-panels>×</button><h2 data-i18n-simple="basket">Basket</h2><div id="cartItems"></div><div class="cart-total"><span data-i18n-simple="total">Total</span><span id="cartTotal">£0</span></div><a class="btn cart-wa" id="cartWhatsApp" href="#" data-i18n-simple="whatsapp">Continue on WhatsApp</a></aside>
+
+<script src="products.js"></script><script src="app.js"></script></body></html>

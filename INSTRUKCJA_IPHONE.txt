@@ -1,20 +1,30 @@
-NOWY PROSTY SYSTEM TOMYBIKE
+NOWY DOCELOWY SYSTEM TOMYBIKE
 
-Wgraj CAŁĄ zawartość tego folderu do głównego katalogu repozytorium tomybike-website, zastępując obecne pliki.
-Najlepiej małymi partiami po 2–3 pliki.
+Pierwsze wgranie:
+1. Wgraj do głównego katalogu GitHub:
+   index.html
+   product.html
+   products.js
+   app.js
+   style.css
+   netlify.toml
+   my-bike-clean-logo.png
+   four-landscapes-natural.jpg
 
-Najważniejsze pliki:
-- index.html
-- product.html
-- products.js
-- app.js
-- style.css
-- netlify.toml
-- folder assets
+2. Do folderu assets wgraj pliki z folderu assets tej paczki.
+   Jeżeli już tam są, nie musisz wgrywać ich ponownie.
 
-Po wgraniu klikaj Commit changes. Netlify zaktualizuje stronę automatycznie.
+3. Kliknij Commit changes. Netlify zaktualizuje stronę automatycznie.
 
-PRZY KOLEJNYM ROWERZE:
-- dodajesz tylko jego zdjęcia do assets
-- podmieniasz products.js
-Nie podmieniasz stron wcześniejszych produktów.
+Przy następnych produktach:
+- dodajesz tylko zdjęcia do assets,
+- podmieniasz tylko products.js.
+
+Nie podmieniasz już index.html, product.html, Treka, Scotta ani wcześniejszych produktów.
+
+Statusy w products.js:
+available = dostępny
+reserved = zarezerwowany
+sold = sprzedany
+unavailable = niedostępny
+hidden = ukryty
