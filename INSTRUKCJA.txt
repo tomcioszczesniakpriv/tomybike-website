@@ -1,0 +1,13 @@
+TO JEST POPRAWNA WERSJA OPARTA NA STARYM, ZAAKCEPTOWANYM WYGLĄDZIE.
+
+Wgraj do głównego katalogu GitHub i zastąp:
+- index.html
+- product.html
+- products.js
+- app.js
+- netlify.toml
+
+Nie ruszaj folderu assets ani zdjęć.
+
+Po Commit changes Cloudflare opublikuje zmianę automatycznie.
+Przy następnych rowerach podmieniasz tylko products.js i dodajesz zdjęcia do assets.
