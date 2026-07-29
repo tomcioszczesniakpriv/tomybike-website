@@ -1,0 +1,13 @@
+TOMYBIKE — ZATWIERDZONA WERSJA DO PUBLIKACJI
+
+1. Otwórz repozytorium GitHub: tomybike-website
+2. Otwórz plik index.html
+3. Wybierz zastąpienie / upload nowego pliku
+4. Wgraj index.html z tej paczki
+5. Kliknij Commit changes
+6. Poczekaj, aż Cloudflare zakończy nowe wdrożenie
+
+Adres strony:
+https://tomybike-website.tomcioszczesniakpriv.workers.dev
+
+W tej paczce nie ma zmian w innych plikach.
